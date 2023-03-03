@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="start()">开始</button>
+    <button onClick="pause()">暂停</button></button></button>
+</body>
+<script src="../index.js"></script>
+<script>
+    const tasks = [] 
+    new Array(5).fill(null).forEach((val,index)=>{
+        let p = ()=>new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                try{
+                    if(index == 2){
+                        resolve(aaa)
+                    }else{
+                        resolve(index)
+                    }
+                }catch(e){
+                    reject(e)
+                }
+            },1400)
+        })
+        tasks.push(p)
+    })
+    const processor = processTasks(tasks)
+    async function start(){
+        let ret = await processor.start().catch(e=>console.log(e))
+        console.log('执行结果为：'+ret)
+    }
+    function pause(){   
+        processor.pause()
+    }
+    
+
+    
+
+
+
+
+
+
+</script>
+</html>

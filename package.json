@@ -1,0 +1,15 @@
+{
+  "name": "processor",
+  "version": "1.0.0",
+  "description": "流程控制",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["javascript","流程控制"],
+  "author": "yuyangyang",
+  "license": "ISC"
+}
+
+
+
